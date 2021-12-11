@@ -11,7 +11,7 @@ namespace ToneForm
         public Tuning tuning;
         public Orbit orbit;
         public int index;
-        public int assignment;
+        public Block block;
 
         public Interval(Tuning tp, int sp)
         {

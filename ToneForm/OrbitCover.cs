@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ToneForm
 {
-    class OrbitCover
+    public class OrbitCover
     {
         public List<Orbit> orbits;
         public AffineTransform f;
