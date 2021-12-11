@@ -9,6 +9,8 @@ namespace ToneForm
     {
         public int steps;
         public Tuning tuning;
+        public Orbit orbit;
+        public int index;
 
         public Interval(Tuning tp, int sp)
         {

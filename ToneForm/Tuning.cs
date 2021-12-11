@@ -20,5 +20,10 @@ namespace ToneForm
                 intervals[i] = new Interval(this, i);
             }
         }
+
+        public Interval reduce(int steps)
+        {
+            return intervals[steps % edo];
+        }
     }
 }
