@@ -8,6 +8,7 @@ namespace ToneForm
     public class Orbit
     {
         public Interval start;
+        public List<Interval> intervals;
         public AffineTransform f;
         public int length;
 
@@ -15,11 +16,13 @@ namespace ToneForm
         {
             start = sp;
             f = fp;
+            intervals = new List<Interval>();
 
             Interval i = start;
             int x = 0;
             while(i.orbit == null)
             {
+                intervals.Add(i);
                 i.orbit = this;
                 i.index = x;
                 x++;

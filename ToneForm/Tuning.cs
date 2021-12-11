@@ -25,5 +25,19 @@ namespace ToneForm
         {
             return intervals[steps % edo];
         }
+
+        public Interval untouched()
+        {
+            Interval found = null;
+            for(int i = 0; i < edo && found == null; i++)
+            {
+                if(intervals[i].orbit == null)
+                {
+                    found = intervals[i];
+                }
+            }
+
+            return found;
+        }
     }
 }
